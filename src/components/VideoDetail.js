@@ -1,3 +1,6 @@
+import './VideoDetail.css';
+
+
 import React from 'react';
 
 const VideoDetail = ({video}) => {
@@ -8,7 +11,7 @@ const VideoDetail = ({video}) => {
 	const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`
 
 	return ( 
-		<div> 
+		<div className = "video"> 
 			<div className = "ui embed">
 				<iframe title = "video-player" src = { videoSrc} />
 			</div>
