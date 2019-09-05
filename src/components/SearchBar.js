@@ -19,35 +19,23 @@ class SearchBar extends React.Component {
 
 	render() {
 		return (
-
-		
-
-
 			<div className = "ui category search">
-				
-					
-
 				<form onSubmit = {this.onFormSubmit} className = "ui form">
 					<div className = "field">
-						<label><h2> Search video </h2>  </label>
-						
+						<label><h2> Search Anything </h2>  </label>
 							<input 
 								type = "text" 
-								placeholder = "ype here...."
+								placeholder = "Type here...."
 								value = {this.state.term}
-								onChange = {this.onInputChange}/>
-								 
-						
+								onChange = {this.onInputChange}
+								/>
 					</div>
-								
 
-								
+					<div> <button class = "ui primary button" onClick = {this.onFormSubmit}> Search </button> </div>
 
-							
-	
-								
 
-						
+
+
 				</form>  
 			</div>
 			
