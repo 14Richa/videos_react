@@ -24,27 +24,33 @@ class SearchBar extends React.Component {
 
 
 			<div className = "ui category search">
-				<div className = "ui icon input">
+				
 					
 
 				<form onSubmit = {this.onFormSubmit} className = "ui form">
 					<div className = "field">
 						<label><h2> Search video </h2>  </label>
+						
 							<input 
 								type = "text" 
+								placeholder = "ype here...."
 								value = {this.state.term}
-								name = "video"
-								onChange = {this.onInputChange} />
-								<div className = "results"></div>
+								onChange = {this.onInputChange}/>
+								 
+						
+					</div>
+								
 
-								</div>
+								
+
+							
 	
 								
 
 						
 				</form>  
 			</div>
-			</div>
+			
 			
 		);
 	}

@@ -17,8 +17,10 @@ const VideoDetail = ({video}) => {
 			</div>
 			<div className = "ui segment">
 
-				<h4 className = "ui header">{video.snippet.title}</h4>
+			<div class = "description">
+				<h3 className = "ui header">{video.snippet.title}</h3>
 				<p> {video.snippet.description}</p>
+			</div>
 			</div>
 		</div>
 
