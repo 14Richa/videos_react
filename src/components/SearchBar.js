@@ -1,3 +1,6 @@
+import './SearchBar.css';
+
+
 import React from 'react';
 
 class SearchBar extends React.Component {
@@ -22,7 +25,7 @@ class SearchBar extends React.Component {
 			<div className = "ui category search">
 				<form onSubmit = {this.onFormSubmit} className = "ui form">
 					<div className = "field">
-						<label><h2> Search Anything </h2>  </label>
+						<label ><h1 className = {`heading`}> Search Anything </h1>  </label>
 							<input 
 								type = "text" 
 								placeholder = "Type here...."
@@ -31,7 +34,7 @@ class SearchBar extends React.Component {
 								/>
 					</div>
 
-					<div> <button class = "ui primary button" onClick = {this.onFormSubmit}> Search </button> </div>
+					<div className = {`button`}> <button className = "ui primary button" onClick = {this.onFormSubmit}> Search </button> </div>
 
 
 

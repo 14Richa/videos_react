@@ -3,6 +3,7 @@ import SearchBar from './SearchBar';
 import youtube from '../api/youtube';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
+//import Panel from './Panel'
 
 
 class App extends React.Component {
@@ -10,7 +11,7 @@ class App extends React.Component {
 	state= { videos: [], selectedVideo: null	};
 
 	componentDidMount() {
-		this.onTermSubmit('coding interview');
+		this.onTermSubmit('coding interview ');
 	}
 
 	onTermSubmit = async (term) => {
@@ -41,6 +42,7 @@ class App extends React.Component {
 					<div className = "five wide column">
 						<VideoList onVideoSelect = {this.onVideoSelect} videos = {this.state.videos}/>
 					</div>
+					
 				</div>
 			</div>
 		</div>
